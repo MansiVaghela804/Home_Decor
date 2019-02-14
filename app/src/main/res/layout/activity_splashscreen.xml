@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashscreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingTop="75dp"
+    tools:context=".Splashscreen">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="29sp"
+        android:layout_marginLeft="40sp">
+
+        <ImageView
+            android:id="@+id/splash"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4sp"
+            android:layout_marginTop="24sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textHomeDeocr"
+                android:layout_width="206dp"
+                android:layout_height="45sp"
+                android:text="HomeDecor"
+                android:textColor="@color/Name"
+                android:textSize="36sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/textletsdesignyourhome"
+                android:layout_width="226dp"
+                android:layout_height="28sp"
+                android:text="Lets Design Your Home"
+                android:textColor="@color/Name"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
