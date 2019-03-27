@@ -40,7 +40,6 @@ public class RatingFeedbackActivity extends AppCompatActivity {
         view = (View)findViewById(R.id.view);
         fb = (EditText)findViewById(R.id.edittext_feedback);
         btn = (Button) findViewById(R.id.submit_feedback);
-
         back = (ImageView)findViewById(R.id.back_rating_feedback);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
