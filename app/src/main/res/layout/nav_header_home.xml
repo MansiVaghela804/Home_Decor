@@ -13,13 +13,13 @@
     android:backgroundTint="@color/Name"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
         android:layout_width="72sp"
         android:layout_height="72sp"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/logo_design" />
+        android:src="@drawable/decor"/>
 
     <TextView
         android:layout_width="match_parent"

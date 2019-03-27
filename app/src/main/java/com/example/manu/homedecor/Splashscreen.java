@@ -1,6 +1,5 @@
 package com.example.manu.homedecor;
 
-
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.os.Handler;
@@ -10,13 +9,12 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 
 public class Splashscreen extends AppCompatActivity {
 
-        /**
+    /**
      * Called when the activity is first created.
      */
     Thread splashTread;
@@ -26,9 +24,9 @@ public class Splashscreen extends AppCompatActivity {
         Window window = getWindow();
         window.setFormat(PixelFormat.RGBA_8888);
     }
-//    private static int SPLASH_TIME_OUT = 3000;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    //    private static int SPLASH_TIME_OUT = 3000;
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
 //        new Handler().postDelayed(new Runnable() {
@@ -40,10 +38,10 @@ public class Splashscreen extends AppCompatActivity {
 //            }
 //        }, SPLASH_TIME_OUT);
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        StartAnimations();
-    }
+         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+         StartAnimations();
+     }
 
     private void StartAnimations() {
         Animation anim = AnimationUtils.loadAnimation(this, R.anim.alpha);
@@ -54,9 +52,9 @@ public class Splashscreen extends AppCompatActivity {
 
         anim = AnimationUtils.loadAnimation(this, R.anim.translate);
         anim.reset();
-        ImageView iv = (ImageView) findViewById(R.id.splash);
-        iv.clearAnimation();
-        iv.startAnimation(anim);
+        LinearLayout linearLayout1 = (LinearLayout) findViewById(R.id.splash);
+        linearLayout1.clearAnimation();
+        linearLayout1.startAnimation(anim);
 
         splashTread = new Thread() {
             @Override

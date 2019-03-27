@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RatingBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.manu.homedecor.APIInterface.APIinterface;
@@ -18,54 +20,59 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-import static android.view.View.OnClickListener;
+public class RatingFeedbackActivity extends AppCompatActivity {
 
-public class ContactUsActivity extends AppCompatActivity {
-
+    TextView txt1,txt2,rate;
+    EditText fb;
+    RatingBar ratingBar;
+    View view;
     ImageView back;
-    EditText contact_problem;
-    Button save;
+    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contact_us);
-        back = (ImageView)findViewById(R.id.back);
-        back.setOnClickListener(new OnClickListener() {
+        setContentView(R.layout.activity_rating_feedback);
+
+        txt1 = (TextView) findViewById(R.id.text_feedback1);
+        txt2 = (TextView) findViewById(R.id.text_feedback2);
+        ratingBar = (RatingBar)findViewById(R.id.rating) ;
+
+        view = (View)findViewById(R.id.view);
+        fb = (EditText)findViewById(R.id.edittext_feedback);
+        btn = (Button) findViewById(R.id.submit_feedback);
+
+        back = (ImageView)findViewById(R.id.back_rating_feedback);
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ContactUsActivity.this,HomeActivity.class);
+                Intent intent = new Intent(RatingFeedbackActivity.this,HomeActivity.class);
                 startActivity(intent);
             }
         });
-
-        contact_problem =(EditText)findViewById(R.id.contact_problem);
-        save=(Button) findViewById(R.id.contact_btn);
-        save.setOnClickListener(new OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Loaddata();
+               Loaddata();
             }
         });
     }
     public void Loaddata(){
-        String contactproblem = contact_problem.getText().toString();
-
+        String feedback = fb.getText().toString();
         APIinterface apIinterface = APICilent.getClient().create(APIinterface.class);
 
-        Call<Registration> getBrandResponseCall = apIinterface.GET_BRAND_RESPONSE_CALL_CONTACT_US(contactproblem);
+        Call<Registration> getBrandResponseCall = apIinterface.GET_BRAND_RESPONSE_CALL_RATING_FEEDBACK(feedback);
 
         getBrandResponseCall.enqueue(new Callback<Registration>() {
             @Override
             public void onResponse(Call<Registration> call, Response<Registration> response) {
-                Toast.makeText(ContactUsActivity.this,response.body().getMsg(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(RatingFeedbackActivity.this,response.body().getMsg(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onFailure(Call<Registration> call, Throwable t) {
-                Toast.makeText(ContactUsActivity.this,t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(RatingFeedbackActivity.this,t.getMessage(), Toast.LENGTH_SHORT).show();
                 Log.e("##", t.getMessage());
             }
         });
-
     }
 }

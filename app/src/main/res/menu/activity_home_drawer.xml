@@ -26,6 +26,10 @@
             android:icon="@drawable/ic_save_in_white_24dp"
             android:title="Wishlist" />
         <item
+            android:id="@+id/nav_rating_feedback"
+            android:icon="@drawable/ic_star_white_24dp"
+            android:title="Rating &amp; Feedback" />
+         <item
             android:id="@+id/nav_contact_us"
             android:icon="@drawable/ic_email_white_24dp"
             android:title="Contact Us" />

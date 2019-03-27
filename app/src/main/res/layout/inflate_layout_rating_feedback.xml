@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_cancel_black_24dp" />
+
+        <TextView
+            android:id="@+id/text_feedback1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanks for using Home Decor App"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/text_feedback2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Rate your experience"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/Black"/>
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:numStars="5"
+            android:stepSize="0.2"
+            android:outlineAmbientShadowColor="@color/Name"
+            android:outlineSpotShadowColor="@color/Name"
+            android:layout_gravity="center"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Feedback"
+            android:textColor="@color/Black"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/edittext_feedback3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=""
+            android:ems="10"
+            android:background="@drawable/edit_box"
+            android:hint="Summerise your feedback"
+            android:gravity="center"
+            android:layout_margin="10sp"
+            android:textColor="@color/Black"
+            android:textSize="16dp"><requestFocus/></EditText>
+        <Button
+            android:id="@+id/submit_feedback"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/White"
+            android:background="@drawable/button"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -8,10 +8,11 @@
     android:layout_gravity="center"
     android:background="@drawable/background"
     android:orientation="vertical"
-    android:paddingTop="75dp"
+    android:paddingTop="79dp"
     tools:context=".Splashscreen">
 
     <LinearLayout
+        android:id="@+id/splash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40sp"
@@ -19,7 +20,6 @@
         android:layout_marginLeft="40sp">
 
         <ImageView
-            android:id="@+id/splash"
             android:layout_width="77dp"
             android:layout_height="wrap_content"
             android:src="@drawable/logo" />
@@ -33,7 +33,7 @@
 
             <TextView
                 android:id="@+id/textHomeDeocr"
-                android:layout_width="206dp"
+                android:layout_width="match_parent"
                 android:layout_height="45sp"
                 android:text="HomeDecor"
                 android:textColor="@color/Name"
@@ -42,7 +42,7 @@
 
             <TextView
                 android:id="@+id/textletsdesignyourhome"
-                android:layout_width="226dp"
+                android:layout_width="match_parent"
                 android:layout_height="28sp"
                 android:text="Lets Design Your Home"
                 android:textColor="@color/Name"

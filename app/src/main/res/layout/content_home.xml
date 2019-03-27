@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,38 +9,54 @@
     tools:context=".HomeActivity"
     tools:showIn="@layout/app_bar_home">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
+            android:id="@+id/linear1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/Name"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.SearchView
+            <SearchView
+                android:id="@+id/searchview"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                app:queryHint="Search">
-            </android.support.v7.widget.SearchView>
+                android:queryHint="What are you looking for?"
+                android:clickable="true">
+            </SearchView>
 
             <ImageView
-                android:layout_width="32dp"
-                android:layout_height="26dp"
+                android:id="@+id/voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="11sp"
                 android:src="@drawable/ic_keyboard_voice_white_24dp"/>
         </LinearLayout>
 
         <TextView
+            android:id="@+id/TextView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Show By Department"
             android:textStyle="bold"
             android:textColor="@color/White"
             android:layout_marginStart="6sp"
-            android:layout_marginLeft="6sp" />
+            android:layout_marginLeft="6sp"
+            android:layout_marginEnd="6sp"/>
+
+        <ListView
+            android:id="@+id/ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideOverlay">
+
+        </ListView>
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

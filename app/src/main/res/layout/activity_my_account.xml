@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MyAccountActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/Name">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backspace"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginStart="110dp"
+                android:text="My Account"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:textSize="22sp" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/decor"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/OffWhite">
+                    <EditText
+                        android:id="@+id/textfirstname"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:hint="First Name"
+                        android:inputType="text"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/OffWhite" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/OffWhite">
+
+                    <EditText
+                        android:id="@+id/text_lastname"
+                        android:layout_width="324dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Last Name"
+                        android:inputType="text"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/OffWhite" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/OffWhite">
+                <EditText
+                    android:id="@+id/text_email"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14sp"
+                    android:hint="Email"
+                    android:textColor="@color/White"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/OffWhite" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/OffWhite">
+                <EditText
+                    android:id="@+id/text_contactno"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14sp"
+                    android:hint="Contact No."
+                    android:textColor="@color/White"
+                    android:inputType="number"
+                    android:textColorHint="@color/OffWhite" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/OffWhite">
+                <EditText
+                    android:id="@+id/text_password"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14sp"
+                    android:hint="Confirm Password"
+                    android:textColor="@color/White"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/OffWhite" />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="110dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:text="save"
+                android:textColor="@color/White"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

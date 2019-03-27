@@ -10,4 +10,141 @@
     tools:context=".ContactUsActivity">
 
 
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/Name">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backspace"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginStart="110dp"
+                android:text="Contact Us"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:textSize="22sp" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Information:"
+                android:textStyle="bold|normal"
+                android:textColor="@color/Name"
+                android:textSize="22dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="105, Sarita Society,\nNikol Gam Road, \n near Sardr mall,\nAhmedabad."
+                android:textStyle="normal"
+                android:textColor="@color/White"
+                android:textSize="16dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number:"
+                android:textStyle="bold|normal"
+                android:textColor="@color/Name"
+                android:textSize="22dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9099545952"
+                android:textStyle="normal"
+                android:textColor="@color/White"
+                android:textSize="16dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textStyle="bold|normal"
+                android:textColor="@color/Name"
+                android:textSize="22dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mansivaghela804@gmail.com"
+                android:textStyle="normal"
+                android:textColor="@color/White"
+                android:textSize="16dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:id="@+id/contact_problem"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:hint="Describe your Problem"
+                android:inputType="text"
+                android:maxLength="40"
+                android:gravity="center"
+                android:background="@drawable/edit_box"
+                android:layout_margin="14dp"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/year" />
+
+            <Button
+                android:id="@+id/contact_btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:textColor="@color/White"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"/>
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

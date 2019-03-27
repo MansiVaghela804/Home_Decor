@@ -20,14 +20,16 @@
             <LinearLayout
                 android:layout_width="318dp"
                 android:layout_height="67dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp">
 
                 <ImageView
                     android:id="@+id/logo"
                     android:layout_width="50sp"
                     android:layout_height="60dp"
-                    android:layout_marginLeft="29sp"
-                    android:layout_marginStart="29sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginStart="20sp"
                     android:src="@drawable/logo" />
 
                 <TextView
@@ -48,7 +50,7 @@
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="11sp">
+                android:layout_marginTop="13sp">
 
                 <ImageView
                     android:id="@+id/email"
@@ -58,14 +60,23 @@
                     android:layout_marginStart="40sp"
                     android:src="@drawable/ic_mail_black_24dp" />
 
-                <EditText
-                    android:id="@+id/textemail"
-                    android:layout_width="250dp"
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20sp"
-                    android:layout_marginStart="20sp"
-                    android:hint="Email"
-                    android:textColorHint="@color/OffWhite" />
+                    android:textColorHint="@color/OffWhite">
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginStart="20sp"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/OffWhite" />
+                </android.support.design.widget.TextInputLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -82,14 +93,25 @@
                     android:layout_marginStart="40sp"
                     android:src="@drawable/ic_lock_black_24dp" />
 
-                <EditText
-                    android:id="@+id/textpassword"
-                    android:layout_width="250dp"
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20sp"
-                    android:layout_marginStart="20sp"
-                    android:hint="Password"
-                    android:textColorHint="@color/OffWhite" />
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/Name"
+                    android:textColorHint="@color/OffWhite">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginStart="20sp"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/OffWhite" />
+                </android.support.design.widget.TextInputLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -112,6 +134,12 @@
                     android:textColor="@color/White"
                     android:textSize="16sp" />
 
+                <TextView
+                    android:id="@+id/textNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10sp" />
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -128,7 +156,7 @@
                         android:textStyle="normal|bold"/>
 
                     <TextView
-                        android:id="@+id/register"
+                        android:id="@+id/registration"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Create New Account"
