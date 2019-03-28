@@ -138,7 +138,8 @@ public class HomeActivity extends AppCompatActivity
             Intent intent = new Intent(HomeActivity.this, MyAccountActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_my_models) {
-
+            Intent intent = new Intent(HomeActivity.this, MyModelsActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_wishlist) {
 
         } else if (id == R.id.nav_rating_feedback) {

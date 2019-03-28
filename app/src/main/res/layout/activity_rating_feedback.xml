@@ -39,84 +39,144 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <LinearLayout
-        android:id="@+id/linearly"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/text_feedback1"
+        <LinearLayout
+            android:id="@+id/linearly"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Thanks for using Home Decor App"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/Name"
-            android:textSize="26dp"/>
+            android:orientation="vertical"
+            android:layout_margin="8dp">
 
-        <TextView
-            android:id="@+id/text_feedback2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Please Rate your experience"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="18dp"
-            android:textColor="@color/White"/>
+            <TextView
+                android:id="@+id/text_feedback1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thanks for using Home Decor App"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/Name"
+                android:textSize="26dp"/>
 
-        <RatingBar
-            android:id="@+id/rating"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:numStars="5"
-            android:stepSize="0.2"
-            android:outlineAmbientShadowColor="@color/Name"
-            android:outlineSpotShadowColor="@color/Name"
-            android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/text_feedback2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Rate your experience"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/White"/>
 
-        <View
-            android:id="@+id/view"
-            android:layout_width="330dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center"
-            android:background="@color/Name"/>
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:numStars="5"
+                android:stepSize="0.2"
+                android:secondaryProgressTint="@color/Name"
+                android:progressBackgroundTint="@color/Name"
+                android:progressTint="@color/Name"
+                android:outlineAmbientShadowColor="@color/Name"
+                android:outlineSpotShadowColor="@color/Name"
+                android:layout_gravity="center"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="10dp"
-            android:text="Feedback"
-            android:textColor="@color/White"
-            android:textStyle="bold"
-            android:textSize="20sp" />
-        <EditText
-            android:id="@+id/edittext_feedback"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text=""
-            android:ems="10"
-            android:background="@drawable/edit_box"
-            android:hint="Summerise your feedback"
-            android:gravity="center"
-            android:layout_margin="10sp"
-            android:textColor="@color/Black"
-            android:textSize="16dp"><requestFocus/></EditText>
-        <Button
-            android:id="@+id/submit_feedback"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:text="Submit"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textColor="@color/White"
-            android:background="@drawable/button"
-            android:layout_marginTop="10dp"/>
-    </LinearLayout>
+            <View
+                android:id="@+id/view"
+                android:layout_width="330dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/Name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"
+                android:text="Feedback"
+                android:textColor="@color/Name"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="1dp"
+                android:text="Send us some feedback ! \nFound a bug? Have a suggestion? Fill out the form below and we'll take a look"
+                android:textColor="@color/White"
+                android:textStyle="normal"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/edittext_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text=""
+                android:ems="10"
+                android:background="@drawable/edit_box"
+                android:hint="Your Name"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/Black"
+                android:textSize="16dp"><requestFocus/></EditText>
+
+            <EditText
+                android:id="@+id/edittext_email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text=""
+                android:ems="10"
+                android:background="@drawable/edit_box"
+                android:hint="Your Email"
+                android:maxLength="29"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/Black"
+                android:textSize="16dp"><requestFocus/></EditText>
+
+            <EditText
+                android:id="@+id/edittext_contact"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text=""
+                android:maxLength="10"
+                android:background="@drawable/edit_box"
+                android:hint="Your Contact"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/Black"
+                android:textSize="16dp"><requestFocus/></EditText>
+            <EditText
+                android:id="@+id/edittext_message"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text=""
+                android:ems="10"
+                android:background="@drawable/edit_box"
+                android:hint="Your Message"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/Black"
+                android:textSize="16dp"><requestFocus/></EditText>
+            <Button
+                android:id="@+id/submit_feedback"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:background="@drawable/button"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

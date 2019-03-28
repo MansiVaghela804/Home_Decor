@@ -64,7 +64,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="105, Sarita Society,\nNikol Gam Road, \n near Sardr mall,\nAhmedabad."
+                android:text="105, Sarita Society,\nNikol Gam Road, \n Near Sardar Mall,\nAhmedabad."
                 android:textStyle="normal"
                 android:textColor="@color/White"
                 android:textSize="16dp"

@@ -72,6 +72,7 @@
                         android:layout_marginLeft="20sp"
                         android:layout_marginStart="20sp"
                         android:hint="Email"
+                        android:maxLength="29"
                         android:inputType="textEmailAddress"
                         android:textColor="@color/White"
                         android:textColorHint="@color/OffWhite" />

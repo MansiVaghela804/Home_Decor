@@ -26,5 +26,8 @@ public interface APIinterface {
     @FormUrlEncoded
     @POST("rating_feedback.php")
     Call<Registration> GET_BRAND_RESPONSE_CALL_RATING_FEEDBACK(
-            @Field("feedback") String feedback);
+            @Field("name") String name,
+            @Field("email") String email,
+            @Field("contact_no") String contact_no,
+            @Field("message") String message);
 }

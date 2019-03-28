@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RatingFeedbackActivity"></activity>
+        <activity android:name=".MyModelsActivity"></activity>
+        <activity android:name=".RatingFeedbackActivity" />
         <activity android:name=".Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

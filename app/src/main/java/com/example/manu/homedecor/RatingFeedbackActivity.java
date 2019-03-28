@@ -20,10 +20,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class RatingFeedbackActivity extends AppCompatActivity {
+public class RatingFeedbackActivity extends AppCompatActivity implements RatingBar.OnRatingBarChangeListener {
 
     TextView txt1,txt2,rate;
-    EditText fb;
+    EditText name,email,contact,msg;
     RatingBar ratingBar;
     View view;
     ImageView back;
@@ -36,9 +36,13 @@ public class RatingFeedbackActivity extends AppCompatActivity {
         txt1 = (TextView) findViewById(R.id.text_feedback1);
         txt2 = (TextView) findViewById(R.id.text_feedback2);
         ratingBar = (RatingBar)findViewById(R.id.rating) ;
+        ratingBar.setOnRatingBarChangeListener(this);
 
         view = (View)findViewById(R.id.view);
-        fb = (EditText)findViewById(R.id.edittext_feedback);
+        name = (EditText)findViewById(R.id.edittext_name);
+        email = (EditText)findViewById(R.id.edittext_email);
+        contact = (EditText)findViewById(R.id.edittext_contact);
+        msg = (EditText)findViewById(R.id.edittext_message);
         btn = (Button) findViewById(R.id.submit_feedback);
         back = (ImageView)findViewById(R.id.back_rating_feedback);
         back.setOnClickListener(new View.OnClickListener() {
@@ -56,10 +60,13 @@ public class RatingFeedbackActivity extends AppCompatActivity {
         });
     }
     public void Loaddata(){
-        String feedback = fb.getText().toString();
+        String name1 = name.getText().toString();
+        String emailId = email.getText().toString();
+        String contactno = contact.getText().toString();
+        String message = msg.getText().toString();
         APIinterface apIinterface = APICilent.getClient().create(APIinterface.class);
 
-        Call<Registration> getBrandResponseCall = apIinterface.GET_BRAND_RESPONSE_CALL_RATING_FEEDBACK(feedback);
+        Call<Registration> getBrandResponseCall = apIinterface.GET_BRAND_RESPONSE_CALL_RATING_FEEDBACK(name1,emailId,contactno,message);
 
         getBrandResponseCall.enqueue(new Callback<Registration>() {
             @Override
@@ -73,5 +80,10 @@ public class RatingFeedbackActivity extends AppCompatActivity {
                 Log.e("##", t.getMessage());
             }
         });
+    }
+
+    @Override
+    public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+        Toast.makeText(RatingFeedbackActivity.this, "New Rating: " + rating,Toast.LENGTH_SHORT).show();
     }
 }
