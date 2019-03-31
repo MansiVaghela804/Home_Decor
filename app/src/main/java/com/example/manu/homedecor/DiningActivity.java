@@ -111,7 +111,7 @@ public class DiningActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindViewHolder(@NonNull DiningModelsAdapter.ViewHolder holder, int position) {
+        public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
             Models models = diningmodelsList.get(position);
             holder.data.setText(models.getData());
             holder.diningimgList.setImageResource(models.getDiningimgList());
