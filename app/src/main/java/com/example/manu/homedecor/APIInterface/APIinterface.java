@@ -9,6 +9,12 @@ import retrofit2.http.POST;
 
 public interface APIinterface {
     @FormUrlEncoded
+    @POST("login.php")
+    Call<Registration> GET_BRAND_RESPONSE_CALL_LOGIN(
+            @Field("email") String email,
+            @Field("password") String password);
+
+    @FormUrlEncoded
     @POST("registration.php")
     Call<Registration> GET_BRAND_RESPONSE_CALL_REGISTER(
             @Field("first_name") String first_name,

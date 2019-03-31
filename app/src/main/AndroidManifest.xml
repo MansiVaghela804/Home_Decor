@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyModelsActivity"></activity>
+        <activity android:name=".ForgotPasswordActivity"></activity>
+        <activity android:name=".MyModelsActivity" />
         <activity android:name=".RatingFeedbackActivity" />
         <activity android:name=".Splashscreen">
             <intent-filter>
@@ -36,12 +37,12 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
         <activity android:name=".ContactUsActivity" />
-        <activity android:name=".KitchenActivity" />
-        <activity android:name=".KidsActivity" />
-        <activity android:name=".FurnitureActivity" />
+        <activity android:name=".KitchenActivity"></activity>
+        <activity android:name=".KidsActivity"></activity>
+        <activity android:name=".FurnitureActivity" ></activity>
         <activity android:name=".FurnishingActivity" />
-        <activity android:name=".DiningActivity" />
-        <activity android:name=".DecorActivity" />
+        <activity android:name=".DiningActivity"></activity>
+        <activity android:name=".DecorActivity"></activity>
         <activity android:name=".BathLaundaryActivity" />
     </application>
 

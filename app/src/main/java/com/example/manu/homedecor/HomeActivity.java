@@ -19,6 +19,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity
@@ -27,15 +28,16 @@ public class HomeActivity extends AppCompatActivity
     DatabaseHelper dbhelper;
     ListView listview;
     SearchView searchView;
+    TextView profilename,profileemail;
+    PreferenceManager preferenceManager;
     private Context context = this;
     ImageView voice;
     private static final int REQUEST_CODE = 1234;
     CustomAdapter customAdapter;
-    String[] items = new String[]{"Furniture", "Decor", "Furnishing", "Kitchen", "Dining", "Bath & Laundary", "Kids"};
+    String[] items = new String[]{"Furniture", "Decor", "Kitchen", "Dining", "Bath & Laundary", "Kids"};
     public static int[] language_images = {R.drawable.furniture,
             //temporary images
             R.drawable.decor,
-            R.drawable.furnishing,
             R.drawable.kitchen,
             R.drawable.dining,
             R.drawable.bathlaundary,
@@ -46,7 +48,11 @@ public class HomeActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        profilename = (TextView)findViewById(R.id.profile_name);
+        profileemail = (TextView)findViewById(R.id.profile_email);
+        preferenceManager = new PreferenceManager(this);
 
+//        profileemail.setText(preferenceManager.getRegisteredUserId());
         searchView = (SearchView) findViewById(R.id.searchview);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -89,22 +95,18 @@ public class HomeActivity extends AppCompatActivity
                     startActivity(intent);
                 }
                 if (position == 2) {
-                    Intent intent = new Intent(HomeActivity.this, FurnishingActivity.class);
-                    startActivity(intent);
-                }
-                if (position == 3) {
                     Intent intent = new Intent(HomeActivity.this, KitchenActivity.class);
                     startActivity(intent);
                 }
-                if (position == 4) {
+                if (position == 3) {
                     Intent intent = new Intent(HomeActivity.this, DiningActivity.class);
                     startActivity(intent);
                 }
-                if (position == 5) {
+                if (position == 4) {
                     Intent intent = new Intent(HomeActivity.this, BathLaundaryActivity.class);
                     startActivity(intent);
                 }
-                if (position == 6) {
+                if (position == 5) {
                     Intent intent = new Intent(HomeActivity.this, KidsActivity.class);
                     startActivity(intent);
                 }

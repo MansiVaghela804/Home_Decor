@@ -12,4 +12,162 @@
     <string name="action_abount_us">Abount Us</string>
     <string name="action_help">Help</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="furniture_item_list">
+        <item>Fastrack NG3121SM02</item>
+        <item>Fastrack 6109SM03</item>
+        <item>Titan Raga</item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+        <item>Adaik Salingka Nagari </item>
+        <item>Aia Mato Papisahan </item>
+        <item>Arok Dirantau Urang </item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+    </string-array>
+
+    <string-array name="decor_item_list">
+        <item>Fastrack NG3121SM02</item>
+        <item>Fastrack 6109SM03</item>
+        <item>Titan Raga</item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+        <item>Adaik Salingka Nagari </item>
+        <item>Aia Mato Papisahan </item>
+        <item>Arok Dirantau Urang </item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+    </string-array>
+
+    <string-array name="furnishing_item_list">
+        <item>Fastrack NG3121SM02</item>
+        <item>Fastrack 6109SM03</item>
+        <item>Titan Raga</item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+        <item>Adaik Salingka Nagari </item>
+        <item>Aia Mato Papisahan </item>
+        <item>Arok Dirantau Urang </item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+    </string-array>
+
+    <string-array name="kitchen_item_list">
+        <item>Fastrack NG3121SM02</item>
+        <item>Fastrack 6109SM03</item>
+        <item>Titan Raga</item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+        <item>Adaik Salingka Nagari </item>
+        <item>Aia Mato Papisahan </item>
+        <item>Arok Dirantau Urang </item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+    </string-array>
+
+    <string-array name="dinning_item_list">
+        <item>Fastrack NG3121SM02</item>
+        <item>Fastrack 6109SM03</item>
+        <item>Titan Raga</item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+        <item>Adaik Salingka Nagari </item>
+        <item>Aia Mato Papisahan </item>
+        <item>Arok Dirantau Urang </item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+    </string-array>
+
+    <string-array name="bath_laundary_item_list">
+        <item>Fastrack NG3121SM02</item>
+        <item>Fastrack 6109SM03</item>
+        <item>Titan Raga</item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+        <item>Adaik Salingka Nagari </item>
+        <item>Aia Mato Papisahan </item>
+        <item>Arok Dirantau Urang </item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+    </string-array>
+
+    <string-array name="kids_item_list">
+        <item>Fastrack NG3121SM02</item>
+        <item>Fastrack 6109SM03</item>
+        <item>Titan Raga</item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+        <item>Adaik Salingka Nagari </item>
+        <item>Aia Mato Papisahan </item>
+        <item>Arok Dirantau Urang </item>
+        <item>Ba Ayah Lai Ba Bako Tido  </item>
+    </string-array>
+
+    <string-array name="furniture_item_image">
+        <item>R.drwable.furniture_one</item>
+        <!--<item>https://rukminim1.flixcart.com/image/832/832/watch/v/w/s/6109sm03-fastrack-original-imaegtr5yqrguchu.jpeg?q=70</item>-->
+        <!--<item>https://rukminim1.flixcart.com/image/832/832/watch/x/4/a/9710ym01-titan-original-imadnbyrrg44fech.jpeg?q=70</item>-->
+        <!--<item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>-->
+        <!--<item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>-->
+        <!--<item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>-->
+        <!--<item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>-->
+        <!--<item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>-->
+
+    </string-array>
+
+    <string-array name="decor_item_image">
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/q/t/h/ng3121sm02-fastrack-original-imaeznczgkmshfqh.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/v/w/s/6109sm03-fastrack-original-imaegtr5yqrguchu.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/x/4/a/9710ym01-titan-original-imadnbyrrg44fech.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+
+    </string-array>
+
+    <string-array name="furnishing_item_image">
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/q/t/h/ng3121sm02-fastrack-original-imaeznczgkmshfqh.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/v/w/s/6109sm03-fastrack-original-imaegtr5yqrguchu.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/x/4/a/9710ym01-titan-original-imadnbyrrg44fech.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+
+    </string-array>
+
+    <string-array name="kitchen_item_image">
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/q/t/h/ng3121sm02-fastrack-original-imaeznczgkmshfqh.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/v/w/s/6109sm03-fastrack-original-imaegtr5yqrguchu.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/x/4/a/9710ym01-titan-original-imadnbyrrg44fech.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+
+    </string-array>
+    <string-array name="dinning_item_image">
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/q/t/h/ng3121sm02-fastrack-original-imaeznczgkmshfqh.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/v/w/s/6109sm03-fastrack-original-imaegtr5yqrguchu.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/x/4/a/9710ym01-titan-original-imadnbyrrg44fech.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+
+    </string-array>
+    <string-array name="bath_laundary_item_image">
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/q/t/h/ng3121sm02-fastrack-original-imaeznczgkmshfqh.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/v/w/s/6109sm03-fastrack-original-imaegtr5yqrguchu.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/x/4/a/9710ym01-titan-original-imadnbyrrg44fech.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+
+    </string-array>
+    <string-array name="kids_item__image">
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/q/t/h/ng3121sm02-fastrack-original-imaeznczgkmshfqh.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/v/w/s/6109sm03-fastrack-original-imaegtr5yqrguchu.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/watch/x/4/a/9710ym01-titan-original-imadnbyrrg44fech.jpeg?q=70</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+        <item>https://rukminim1.flixcart.com/image/832/832/ji95yfk0/watch/f/v/3/mg-2467-omega-original-imaf63ahjyhpafbn.jpeg</item>
+
+    </string-array>
 </resources>

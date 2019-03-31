@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -116,22 +117,23 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="289dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="31sp"
-                android:layout_marginTop="26sp"
-                android:orientation="vertical"
                 android:layout_gravity="center"
-                android:layout_marginLeft="31sp">
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="26sp"
+                android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/signin"
+                    android:id="@+id/login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="78sp"
                     android:layout_marginStart="78sp"
+                    android:layout_marginLeft="78sp"
                     android:background="@drawable/button"
-                    android:text="SIGNIN"
+                    android:onClick="login"
+                    android:text="Login"
                     android:textColor="@color/White"
                     android:textSize="16sp" />
 
@@ -141,6 +143,7 @@
                     android:layout_height="wrap_content"
                     android:text=""
                     android:textSize="10sp" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -154,19 +157,32 @@
                         android:text="No Account Yet?"
                         android:textColor="@color/OffWhite"
                         android:textSize="16sp"
-                        android:textStyle="normal|bold"/>
+                        android:textStyle="normal|bold" />
 
                     <TextView
                         android:id="@+id/registration"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="4sp"
+                        android:layout_marginLeft="4sp"
+                        android:onClick="create_new_account"
                         android:text="Create New Account"
                         android:textColor="@color/OffWhite"
-                        android:layout_marginStart="4sp"
                         android:textSize="16sp"
-                        android:layout_marginLeft="4sp"
-                        android:textStyle="normal|bold"/>
+                        android:textStyle="normal|bold" />
                 </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="6dp"
+                    android:onClick="forgot_password"
+                    android:text="Forgot Password ?"
+                    android:textColor="@color/White"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="60dp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

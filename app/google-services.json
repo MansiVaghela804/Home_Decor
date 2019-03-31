@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "471340977384",
+    "firebase_url": "https://homedecor-f897d.firebaseio.com",
+    "project_id": "homedecor-f897d",
+    "storage_bucket": "homedecor-f897d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471340977384:android:8e6470f897004831",
+        "android_client_info": {
+          "package_name": "com.example.manu.homedecor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471340977384-ul8hrq7s70nj4jrmu5r98ha6abp9dsr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVdfLe432iAgHLLXNbjoUQkYb-6gAoKzs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
