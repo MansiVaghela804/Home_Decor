@@ -19,7 +19,6 @@ public class DiningActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Models> diningmodelsList;
-    ImageView back;
     private RecyclerView.LayoutManager mLayoutManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,17 +54,13 @@ public class DiningActivity extends AppCompatActivity {
 
         // 4. set adapter
         recyclerView.setAdapter(mAdapter);
-
-        back = (ImageView)findViewById(R.id.back_dinning);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(DiningActivity.this,HomeActivity.class);
-                startActivity(intent);
-            }
-        });
-
     }
+
+    public void backDining(View view) {
+        Intent intent = new Intent(DiningActivity.this,HomeActivity.class);
+        startActivity(intent);
+    }
+
     public class Models {
         private int diningimgList;
         private String data;

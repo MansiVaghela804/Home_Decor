@@ -1,9 +1,9 @@
 package com.example.manu.homedecor;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -19,7 +19,6 @@ public class KitchenActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Models> kitchenmodelsList;
-    ImageView back;
     private RecyclerView.LayoutManager mLayoutManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,16 +54,11 @@ public class KitchenActivity extends AppCompatActivity {
 
         // 4. set adapter
         recyclerView.setAdapter(mAdapter);
+    }
 
-
-        back = (ImageView)findViewById(R.id.back_kitchen);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(KitchenActivity.this,HomeActivity.class);
-                startActivity(intent);
-            }
-        });
+    public void backKitchen(View view) {
+        Intent intent = new Intent(KitchenActivity.this,HomeActivity.class);
+        startActivity(intent);
     }
 
     public class Models {

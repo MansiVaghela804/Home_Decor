@@ -19,7 +19,6 @@ public class KidsActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Models> kidsmodelsList;
-    ImageView back;
     private RecyclerView.LayoutManager mLayoutManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,16 +54,13 @@ public class KidsActivity extends AppCompatActivity {
 
         // 4. set adapter
         recyclerView.setAdapter(mAdapter);
-
-        back = (ImageView)findViewById(R.id.back_kids);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(KidsActivity.this,HomeActivity.class);
-                startActivity(intent);
-            }
-        });
     }
+
+    public void backKids(View view) {
+        Intent intent = new Intent(KidsActivity.this,HomeActivity.class);
+        startActivity(intent);
+    }
+
     public class Models {
         private int kidsimgList;
         private String data;

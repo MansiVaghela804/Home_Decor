@@ -19,7 +19,6 @@ public class FurnitureActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Models> modelsList;
-    ImageView back;
     private RecyclerView.LayoutManager mLayoutManager;
 
     @Override
@@ -54,14 +53,11 @@ public class FurnitureActivity extends AppCompatActivity {
 
         // 4. set adapter
         recyclerView.setAdapter(mAdapter);
-        back = (ImageView) findViewById(R.id.back_furniture);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(FurnitureActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
-        });
+    }
+
+    public void backFurniture(View view) {
+        Intent intent = new Intent(FurnitureActivity.this, HomeActivity.class);
+        startActivity(intent);
     }
 
     public class Models {

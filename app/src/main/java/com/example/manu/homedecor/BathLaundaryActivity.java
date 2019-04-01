@@ -1,5 +1,5 @@
 package com.example.manu.homedecor;
-//model image pending
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -19,7 +19,6 @@ public class BathLaundaryActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Models> bathmodelsList;
-    ImageView back;
     private RecyclerView.LayoutManager mLayoutManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +29,16 @@ public class BathLaundaryActivity extends AppCompatActivity {
         BathModelsAdapter mAdapter = new BathModelsAdapter(bathmodelsList);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview5);
 
-        Models models[] = {new Models(R.drawable.kitchen_1, "Model 1"),
-                new Models(R.drawable.kitchen_2, "Model 2"),
-                new Models(R.drawable.kitchen_3, "Model 3"),
-                new Models(R.drawable.kitchen_4, "Model 4"),
-                new Models(R.drawable.kitchen_5, "Model 5"),
-                new Models(R.drawable.kitchen_6, "Model 6"),
-                new Models(R.drawable.kitchen_7,"Model 7"),
-                new Models(R.drawable.kitchen_8, "Model 8"),
-                new Models(R.drawable.kitchen_9, "Model 9"),
-                new Models(R.drawable.kitchen_10, "Model 10")};
+        Models models[] = {new Models(R.drawable.bath_1, "Model 1"),
+                new Models(R.drawable.bath_2, "Model 2"),
+                new Models(R.drawable.bath_3, "Model 3"),
+                new Models(R.drawable.bath_4, "Model 4"),
+                new Models(R.drawable.bath_5, "Model 5"),
+                new Models(R.drawable.bath_6, "Model 6"),
+                new Models(R.drawable.bath_7,"Model 7"),
+                new Models(R.drawable.bath_8, "Model 8"),
+                new Models(R.drawable.bath_9, "Model 9"),
+                new Models(R.drawable.bath_10, "Model 10")};
 
 
         for (int j = 0; j < 1; j++) {
@@ -47,24 +46,20 @@ public class BathLaundaryActivity extends AppCompatActivity {
                 bathmodelsList.add(models[i]);
             }
         }
-        // 2. set layoutManger
+// 2. set layoutManger
 //        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         mLayoutManager = new GridLayoutManager(getApplicationContext(),2);
         recyclerView.setLayoutManager(mLayoutManager);
         // 3. create an adapter
-
         // 4. set adapter
         recyclerView.setAdapter(mAdapter);
-
-        back = (ImageView)findViewById(R.id.back_bath_laundry);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(BathLaundaryActivity.this,HomeActivity.class);
-                startActivity(intent);
-            }
-        });
     }
+
+    public void backBath(View view) {
+        Intent intent = new Intent(BathLaundaryActivity.this,HomeActivity.class);
+        startActivity(intent);
+    }
+
     public class Models {
         private int bathimgList;
         private String data;

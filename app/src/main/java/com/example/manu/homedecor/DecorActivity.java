@@ -19,7 +19,6 @@ public class DecorActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Models> modelsList;
-    ImageView back;
     private RecyclerView.LayoutManager mLayoutManager;
 
     @Override
@@ -67,15 +66,13 @@ public class DecorActivity extends AppCompatActivity {
 
         // 4. set adapter
         recyclerView.setAdapter(mAdapter);
-        back = (ImageView)findViewById(R.id.back_decor);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(DecorActivity.this,HomeActivity.class);
-                startActivity(intent);
-            }
-        });
     }
+
+    public void backDecor(View view) {
+        Intent intent = new Intent(DecorActivity.this,HomeActivity.class);
+        startActivity(intent);
+    }
+
     public class Models{
         private int imagelist;
         private String data;

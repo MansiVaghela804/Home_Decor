@@ -23,7 +23,8 @@
                 android:id="@+id/back_bath_laundry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/backspace"/>
+                android:src="@drawable/backspace"
+                android:onClick="backBath"/>
 
             <TextView
                 android:layout_width="wrap_content"
