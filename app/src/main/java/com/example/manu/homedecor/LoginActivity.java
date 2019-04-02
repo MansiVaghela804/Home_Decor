@@ -52,13 +52,13 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    public void create_new_account(View view) {
+    public void createnNewAccount(View view) {
         Intent intent=new Intent(LoginActivity.this,RegisterActivity.class);
         startActivity(intent);
 
     }
 
-    public void forgot_password(View view) {
+    public void forgotPassword(View view) {
         Intent intent=new Intent(LoginActivity.this,ForgotPasswordActivity.class);
         startActivity(intent);
 

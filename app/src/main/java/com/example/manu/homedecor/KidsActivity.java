@@ -29,16 +29,16 @@ public class KidsActivity extends AppCompatActivity {
         KidsModelsAdapter mAdapter = new KidsModelsAdapter(kidsmodelsList);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview6);
 
-        Models models[] = {new Models(R.drawable.kitchen_1, "Model 1"),
-                new Models(R.drawable.kitchen_2, "Model 2"),
-                new Models(R.drawable.kitchen_3, "Model 3"),
-                new Models(R.drawable.kitchen_4, "Model 4"),
-                new Models(R.drawable.kitchen_5, "Model 5"),
-                new Models(R.drawable.kitchen_6, "Model 6"),
-                new Models(R.drawable.kitchen_7,"Model 7"),
-                new Models(R.drawable.kitchen_8, "Model 8"),
-                new Models(R.drawable.kitchen_9, "Model 9"),
-                new Models(R.drawable.kitchen_10, "Model 10")};
+        Models models[] = {new Models(R.drawable.kids_1, "Model 1"),
+                new Models(R.drawable.kids_2, "Model 2"),
+                new Models(R.drawable.kids_3, "Model 3"),
+                new Models(R.drawable.kids_4, "Model 4"),
+                new Models(R.drawable.kids_5, "Model 5"),
+                new Models(R.drawable.kids_6, "Model 6"),
+                new Models(R.drawable.kids_7,"Model 7"),
+                new Models(R.drawable.kids_8, "Model 8"),
+                new Models(R.drawable.kids_9, "Model 9"),
+                new Models(R.drawable.kids_10, "Model 10")};
 
 
         for (int j = 0; j < 1; j++) {
