@@ -53,6 +53,7 @@ public class MyAccountActivity extends AppCompatActivity implements View.OnClick
         email.setText(preferenceManager.getKeyValueString(VariableBag.EMAIL));
         contactno.setText(preferenceManager.getKeyValueString(VariableBag.CONTACT_NO));
         password.setText(preferenceManager.getKeyValueString(VariableBag.CONFIRM_PASSWORD));
+
         back = (ImageView) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override

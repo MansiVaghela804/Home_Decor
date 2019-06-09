@@ -9,6 +9,8 @@ public class VariableBag {
     public static String EMAIL = "EMAIL";
     public static String CONTACT_NO = "CONTACT_NO";
     public static String CONFIRM_PASSWORD = "CONFIRM_PASSWORD";
+    public static String USER_EMAIL = "USER_EMAIL";
+    public static String USER_PASSWORD = "USER_PASSWORD";
     public static int SUCCESS_CODE = 200;
     public static int ERROR_CODE = 201;
 }

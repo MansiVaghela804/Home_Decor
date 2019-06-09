@@ -1,8 +1,10 @@
 package com.example.manu.homedecor;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,6 +21,7 @@ public class BathLaundaryActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Models> bathmodelsList;
+    private Context context = this;
     private RecyclerView.LayoutManager mLayoutManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,10 +105,104 @@ public class BathLaundaryActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
             Models models = bathmodelsList.get(position);
             holder.data.setText(models.getData());
             holder.bathimgList.setImageResource(models.getBathimgList());
+            holder.bathimgList.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (position == 0) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.bath_laundary_model_one,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_bath_laundary_1);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_bath_laundary_1);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+
+                    }
+                    if (position == 1) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.bath_laundary_model_two,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_bath_laundary_2);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_bath_laundary_2);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 2) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.bath_laundary_model_three,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_bath_laundary_3);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_bath_laundary_3);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 3) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.bath_laundary_model_four,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_bath_laundary_4);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_bath_laundary_4);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 4) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.bath_laundary_model_five,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_bath_laundary_5);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_bath_laundary_5);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 5) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.bath_laundary_model_six,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_bath_laundary_6);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_bath_laundary_6);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 6) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.bath_laundary_model_seven,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_bath_laundary_7);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_bath_laundary_7);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 7) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.bath_laundary_model_eight,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_bath_laundary_8);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_bath_laundary_8);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }if (position == 8) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.bath_laundary_model_nine,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_bath_laundary_9);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_bath_laundary_9);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }if (position == 9) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.bath_laundary_model_ten,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_bath_laundary_10);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_bath_laundary_10);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                }
+            });
         }
 
         @Override

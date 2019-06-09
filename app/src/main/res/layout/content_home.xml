@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".HomeActivity"
     tools:showIn="@layout/app_bar_home">
@@ -25,8 +26,9 @@
 
             <SearchView
                 android:id="@+id/searchview"
-                android:layout_width="320dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:queryHint="What are you looking for?"
                 android:clickable="true">
             </SearchView>
@@ -35,7 +37,9 @@
                 android:id="@+id/voice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="0"
                 android:layout_marginTop="11sp"
+                android:layout_marginRight="10dp"
                 android:src="@drawable/ic_keyboard_voice_white_24dp"/>
         </LinearLayout>
 
@@ -51,7 +55,7 @@
             android:layout_marginEnd="6sp"/>
 
         <ListView
-            android:id="@+id/ListView"
+            android:id="@+id/listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbarStyle="outsideOverlay">

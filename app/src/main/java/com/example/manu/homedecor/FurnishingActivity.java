@@ -1,15 +1,16 @@
 package com.example.manu.homedecor;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,13 +31,13 @@ public class FurnishingActivity extends AppCompatActivity {
         FurnishingModelsAdappter mAdapter = new FurnishingModelsAdappter(furnishingmodelsList);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview3);
 
-        Models models[] = {new Models(R.drawable.furniture_one, "Android"),
-                new Models(R.drawable.furniture_two, "Rate"),
-                new Models(R.drawable.furniture_three, "Send"),
-                new Models(R.drawable.furniture_four, "Share"),
-                new Models(R.drawable.furniture_five, "Share"),
-                new Models(R.drawable.furniture_six, "Share"),
-                new Models(R.drawable.furniture_eight, "Share")};
+        Models models[] = {new Models(R.drawable.furniture_1, "Android"),
+                new Models(R.drawable.furniture_2, "Rate"),
+                new Models(R.drawable.furniture_3, "Send"),
+                new Models(R.drawable.furniture_4, "Share"),
+                new Models(R.drawable.furniture_5, "Share"),
+                new Models(R.drawable.furniture_6, "Share"),
+                new Models(R.drawable.furniture_8, "Share")};
 
 
         for (int j = 0; j < 1; j++) {
@@ -63,11 +64,11 @@ public class FurnishingActivity extends AppCompatActivity {
     }
     public class Models {
         private int imagelist;
-//        private String data;
+        private String data;
 
         public Models(int imagelist, String data) {
             this.imagelist = imagelist;
-//            this.data = data;
+            this.data = data;
         }
 
         public int getImagelist() {
@@ -78,13 +79,13 @@ public class FurnishingActivity extends AppCompatActivity {
             this.imagelist = imagelist;
         }
 
-        //        public String getData() {
-//            return data;
-//        }
-//
-//        public void setData(String data) {
-//            this.data = data;
-//        }
+                public String getData() {
+            return data;
+        }
+
+        public void setData(String data) {
+            this.data = data;
+        }
     }
     public class FurnishingModelsAdappter extends RecyclerView.Adapter<FurnishingModelsAdappter.ViewHolder>{
 
@@ -106,7 +107,7 @@ public class FurnishingActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
                 Models models = furnishingmodelsList.get(position);
-//            holder.data.setText(models.getData());
+            holder.data.setText(models.getData());
             holder.imagelist.setImageResource(models.getImagelist());
 
         }
@@ -117,12 +118,12 @@ public class FurnishingActivity extends AppCompatActivity {
         }
 
         public class ViewHolder extends RecyclerView.ViewHolder {
-            //            TextView data;
+            TextView data;
             ImageView imagelist;
 
             public ViewHolder(View itemView) {
                 super(itemView);
-//                data = (TextView)itemView.findViewById(R.id.data);
+                data = (TextView)itemView.findViewById(R.id.data);
                 imagelist = (ImageView) itemView.findViewById(R.id.imagelist);
             }
         }

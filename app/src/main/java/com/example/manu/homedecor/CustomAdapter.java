@@ -45,12 +45,12 @@ public class CustomAdapter extends BaseAdapter {
     public View getView(final int position, View convertView, ViewGroup parent) {
         View view = inflater.inflate(R.layout.row_list,null);
 
-        TextView items_lists = (TextView)view.findViewById(R.id.items_list);
-        ImageView image_lists = (ImageView)view.findViewById(R.id.image_list);
+        TextView items_lists = (TextView)view.findViewById(R.id.category_name);
+        ImageView image_lists = (ImageView)view.findViewById(R.id.image);
 
         items_lists.setText(result[position]);
-        Picasso.get().load(imgId[position]).into(image_lists);
-//        Picasso.with(ctx).load(imgId[position]).into(image_lists);
+//        Picasso.get().load(imgId[position]).into(image_lists);
+        Picasso.with(ctx).load(imgId[position]).into(image_lists);
 
         return view;
     }

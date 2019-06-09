@@ -10,17 +10,22 @@
             android:title="Home"
             />
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_camera_enhance_white_24dp"
-            android:title="Start Design" />
-        <item
             android:id="@+id/nav_my_account"
             android:icon="@drawable/ic_account_box_white_24dp"
             android:title="My Account" />
         <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_camera_enhance_white_24dp"
+            android:title="Start Design" />
+
+        <item
             android:id="@+id/nav_my_models"
             android:icon="@drawable/ic_bubble_chart_white_24dp"
             android:title="My Models" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/categories"
+            android:title="Categories" />
         <item
             android:id="@+id/nav_wishlist"
             android:icon="@drawable/ic_save_in_white_24dp"

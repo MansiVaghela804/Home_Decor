@@ -1,8 +1,10 @@
 package com.example.manu.homedecor;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,6 +21,7 @@ public class DiningActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     List<Models> diningmodelsList;
+    private Context context = this;
     private RecyclerView.LayoutManager mLayoutManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,10 +109,105 @@ public class DiningActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
             Models models = diningmodelsList.get(position);
             holder.data.setText(models.getData());
             holder.diningimgList.setImageResource(models.getDiningimgList());
+            holder.diningimgList.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    if (position == 0) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.dining_model_one,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_dining_1);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_dining_1);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+
+                    }
+                    if (position == 1) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.dining_model_two,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_dining_2);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_dining_2);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 2) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.dining_model_three,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_dining_3);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_dining_3);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 3) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.dining_model_four,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_dining_4);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_dining_4);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 4) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.dining_model_five,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_dining_5);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_dining_5);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 5) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.dining_model_six,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_dining_6);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_dining_6);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 6) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.dining_model_seven,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_dining_7);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_dining_7);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                    if (position == 7) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.dining_model_eight,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_dining_8);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_dining_8);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }if (position == 8) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.dining_model_nine,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_dining_9);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_dining_9);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }if (position == 9) {
+                        LayoutInflater inflater = getLayoutInflater();
+                        View layout_inflate = inflater.inflate(R.layout.dining_model_ten,null);
+                        final  ImageView image1 = layout_inflate.findViewById(R.id.img_dining_10);
+                        final TextView text1 = layout_inflate.findViewById(R.id.txt_dining_10);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        builder.setView(layout_inflate);
+                        builder.show();
+                    }
+                }
+            });
         }
 
         @Override

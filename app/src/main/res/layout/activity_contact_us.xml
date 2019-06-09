@@ -64,7 +64,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="105, Sarita Society,\nNikol Gam Road, \n Near Sardar Mall,\nAhmedabad."
+                android:text="Sarita Society,\nNikol Gam Road,\nAhmedabad."
                 android:textStyle="normal"
                 android:textColor="@color/White"
                 android:textSize="16dp"
@@ -88,7 +88,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="9099545952"
+                android:text="9098535452"
                 android:textStyle="normal"
                 android:textColor="@color/White"
                 android:textSize="16dp"
@@ -112,7 +112,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="mansivaghela804@gmail.com"
+                android:text="mansivaghela@gmail.com"
                 android:textStyle="normal"
                 android:textColor="@color/White"
                 android:textSize="16dp"

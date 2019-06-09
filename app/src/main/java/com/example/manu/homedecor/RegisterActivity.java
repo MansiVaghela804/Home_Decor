@@ -71,7 +71,7 @@ public class RegisterActivity extends AppCompatActivity {
         psw = (EditText) findViewById(R.id.textpassword);
         confirm_psw = (EditText) findViewById(R.id.textconfirmpassword);
         register=(Button)findViewById(R.id.register);
-        userpic=(ImageView)findViewById(R.id.user_pic);
+//        userpic=(ImageView)findViewById(R.id.user_pic);
 
     }
     private Boolean validate(){

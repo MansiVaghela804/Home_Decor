@@ -111,6 +111,11 @@ public class LoginActivity extends AppCompatActivity {
             firebaseAuth.signOut();
         }
     }
+
+    public void skip(View view) {
+        Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
+        startActivity(intent);
+    }
 }
 
 

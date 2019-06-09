@@ -29,6 +29,7 @@ public interface APIinterface {
     Call<Registration> GET_BRAND_RESPONSE_CALL_CONTACT_US(
             @Field("description") String description);
 
+
     @FormUrlEncoded
     @POST("rating_feedback.php")
     Call<Registration> GET_BRAND_RESPONSE_CALL_RATING_FEEDBACK(
@@ -36,4 +37,15 @@ public interface APIinterface {
             @Field("email") String email,
             @Field("contact_no") String contact_no,
             @Field("message") String message);
+
+//    @FormUrlEncoded
+//    @POST("common_model.php")
+//    Call<CategoryResponse> GET_BRAND_RESPONSE_CALL_COMMON_CATEGORIES(
+//            @Field("getUsers") String getUsers);
+//
+//    @FormUrlEncoded
+//    @POST("sub_common_model.php")
+//    Call<SubCategoryResponse> GET_BRAND_RESPONSE_CALL_SUB_COMMON_CATEGORIES(
+//            @Field("category_id") String category_id,
+//            @Field("getUsers") String getUsers);
 }
